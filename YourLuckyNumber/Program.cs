@@ -4,8 +4,14 @@
     {
         static void Main(string[] args)
         {
+            //для нормальноого відображення "і" в консолі
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.InputEncoding = System.Text.Encoding.UTF8;
+
             Random random = new();
-            byte luckyNumber = (byte)random.Next(0,99); //генерація рандомного числа від 0 до 99
+            sbyte luckyNumber = (sbyte)random.Next(0,99); //генерація рандомного числа від 0 до 99
+
+            Console.WriteLine($"Сьогодні твоє щасливе число {luckyNumber}");
         }
     }
 }

@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Random random = new();
+            byte luckyNumber = (byte)random.Next(0,99); //генерація рандомного числа від 0 до 99
         }
     }
 }
